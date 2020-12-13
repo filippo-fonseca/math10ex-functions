@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import { Button } from "@geist-ui/react";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome.</h1>
+        <h1 className={styles.title}>1.6-7 - Criterion D Summative</h1>
 
         <p className={styles.description}>
           Get started by watching the interactive walkthrough, learning about
@@ -18,12 +19,30 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="" className={styles.card}>
             <h3>Walkthrough &rarr;</h3>
             <p>
               Discover the general inspiration, logic, and work behind the
               project through an interactive video.
             </p>
+            <div style={{ marginTop: "16px", marginBottom: "16px" }}>
+              <iframe
+                src="https://www.loom.com/embed/6e746afd413347e79093703f75b1228d"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+                // style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+              ></iframe>
+            </div>
+            <a
+              target="_blank"
+              href="https://www.loom.com/embed/6e746afd413347e79093703f75b1228d"
+            >
+              <Button auto type="success">
+                Watch in Full Screen ↔
+              </Button>
+            </a>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
